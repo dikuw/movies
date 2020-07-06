@@ -18,7 +18,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 app.use('/api', movieRouter);
 
 app.get('/', (req, res) => {
-    res.send('Hello World! First MERN Application');
+    res.send('This is the backend for the Movies MERN app');
 })
 
 app.set('port', process.env.PORT || 3003);
